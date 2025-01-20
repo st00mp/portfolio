@@ -1,0 +1,117 @@
+/* Section titre principal */
+.section-intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.page-title {
+    font-size: 36px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Section projets */
+.section-projects {
+    padding: 50px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.section-projects .section-title {
+    font-size: 28px;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1 1 calc(33.33% - 40px);
+    /* Trois colonnes */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #555;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project-item {
+        flex: 1 1 100%;
+        /* Une seule colonne sur mobile */
+    }
+
+    .project-container {
+        gap: 15px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .page-subtitle,
+    .project-description,
+    .project-tech {
+        font-size: 14px;
+    }
+}
